@@ -1,0 +1,241 @@
+
+        * {
+
+            padding: 0;
+
+        }
+
+        body {
+            background-color:#283747 ;
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            
+            border-radius: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #5d6d7e;
+
+        }
+
+        .left {
+            font-size: xx-large;
+            font-weight: 450;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            font-size: larger;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: gainsboro;
+            font-size: 1.35rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 93px 0px;
+        }
+
+        .firstSection>div {
+            width: 30%;
+            margin-top: 100px;
+            line-height: 25px;
+        }
+
+        .leftSection {
+            line-height: 30px;
+            font-size: x-large;
+            position: relative;
+            top: -55px;
+        }
+
+        .leftSection div {
+
+            font-size: large;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondSection h1 {
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        .secondSection li {
+            line-height: 30px;
+        }
+
+        .skillBar {
+            height: 15px;
+            background-color: #5d6d7e;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+
+        .projectsSection h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .projectsSection h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1.5px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #5d6d7e;
+            color: white;
+            font-weight: 650;
+            font-size: large;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        td:nth-child(1) {
+            font-weight: 650;
+
+        }
+
+        .rightSection img {
+            position: absolute;
+            top: 195px;
+            right: 100px;
+            width: 300px;
+            height: 280px;
+        }
+
+        .certificationsSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .certification h2 {
+            font-size: x-large;
+            margin-bottom: 10px;
+        }
+
+        .certification img {
+            max-width: 60%;
+            height: 500;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #5d6d7e;
+            height: 200px;
+            padding: 20px;
+            margin: 20px 50px;
+        }
+
+        footer {
+            background-color: #5d6d7e;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 100px;
+        }
+
+        .footer-first h3,
+        .footer-third h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-second ul,
+        .contact-info {
+            list-style: none;
+            padding: 0;
+
+        }
+
+        .footer-second ul li,
+        .contact-info li {
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info img {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: lightgray;
+            font-size: large;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-third,
+            .footer-second,
+            .footer-first {
+                margin-bottom: 20px;
+                
+            }
+            .footer-second{
+                text-align: center;
+            }
+
+            .contact-info {
+                text-align: center;
+            }
+        }

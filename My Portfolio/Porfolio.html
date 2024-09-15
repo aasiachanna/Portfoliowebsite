@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" Content="Aasia Channa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+</head>
+
+<style>
+    * {
+
+        padding: 0;
+
+    }
+
+    body {
+        background-color: #283747;
+        color: aliceblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+
+        border-radius: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: #5d6d7e;
+
+    }
+
+    .left {
+        font-size: xx-large;
+        font-weight: 450;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        font-size: larger;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+        color: gainsboro;
+        font-size: 1.35rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 93px 0px;
+    }
+
+    .firstSection>div {
+        width: 30%;
+        margin-top: 100px;
+        line-height: 25px;
+    }
+
+    .leftSection {
+        line-height: 30px;
+        font-size: x-large;
+        position: relative;
+        top: -55px;
+    }
+
+    .leftSection div {
+
+        font-size: large;
+    }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .secondSection h1 {
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    .secondSection li {
+        line-height: 30px;
+    }
+
+    .skillBar {
+        height: 15px;
+        background-color: #5d6d7e;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    .projectsSection h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .projectsSection h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        border: 1.5px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #5d6d7e;
+        color: white;
+        font-weight: 650;
+        font-size: large;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    td:nth-child(1) {
+        font-weight: 650;
+
+    }
+
+    .rightSection img {
+        position: absolute;
+        top: 195px;
+        right: 100px;
+        width: 300px;
+        height: 280px;
+    }
+
+    .certificationsSection {
+        max-width: 80vw;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .certification h2 {
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+
+    .certification img {
+        max-width: 60%;
+        height: 500;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: #5d6d7e;
+        height: 200px;
+        padding: 20px;
+        margin: 20px 50px;
+    }
+
+    footer {
+        background-color: #5d6d7e;
+        padding: 20px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 100px;
+    }
+
+    .footer-first h3,
+    .footer-third h4 {
+        margin-bottom: 10px;
+    }
+
+    .footer-second ul,
+    .contact-info {
+        list-style: none;
+        padding: 0;
+
+    }
+
+    .footer-second ul li,
+    .contact-info li {
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .contact-info li {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info img {
+        margin-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: lightgray;
+        font-size: large;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-third,
+        .footer-second,
+        .footer-first {
+            margin-bottom: 20px;
+
+        }
+
+        .footer-second {
+            text-align: center;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#footer">Contact here</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="about">
+            <div class="leftSection">
+                I am Aasia Channa <br>
+                A Data Analyst
+                <br><br>
+                <div>
+                    I am an enthusiastic data analyst skilled in Python, SQL, Excel, and Power BI. I have experience in
+                    data cleaning, analysis, and building dashboards. I enjoy solving problems using data and presenting
+                    clear insights. I am eager to learn and apply new techniques. I am beginner front-end web developer
+                    as well.
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Logo.jpg">
+            </div>
+        </section>
+        <hr>
+        <section id="skills" class="secondSection">
+            <h1>Skills</h1>
+            <ul>
+                <li>MS Office <div class="skillBar" style="width: 90%;"></div>
+                </li>
+                <li>Java <div class="skillBar" style="width: 85%;"></div>
+                </li>
+                <li>Python <div class="skillBar" style="width: 90%;"></div>
+                </li>
+                <li>SQL <div class="skillBar" style="width: 85%;"></div>
+                </li>
+                <li>MS Excel <div class="skillBar" style="width: 90%;"></div>
+                </li>
+                <li>Power BI <div class="skillBar" style="width: 80%;"></div>
+                </li>
+                <li>Exploratory Data Analysis <div class="skillBar" style="width: 85%;"></div>
+                </li>
+                <li>Dashboards <div class="skillBar" style="width: 90%;"></div>
+                </li>
+                <li>HTML <div class="skillBar" style="width: 90%;"></div>
+                </li>
+                <li>CSS <div class="skillBar" style="width: 80%;"></div>
+                </li>
+            </ul>
+        </section> <br>
+        <hr>
+
+
+        <section id="projects" class="projectsSection">
+            <h1>Projects</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Tools Used</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sales Data Analysis</td>
+                        <td>Excel <br><i>Formulas-Pivot Tables-Pivot Charts</i> </td>
+                        <td>
+                            <li>Developed an interactive Sales Dashboard in Excel using pivot tables and charts.</li>
+                            <li>Cleaned, transformed, and analysed a Kaggle dataset to extract dataset to extract key
+                                insights.</li>
+                            <li>Visulaized metrics including sales trends, gender and category-wise distribution, and
+                                age group sales.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amazon's Best Selling Books Data Analysis</td>
+                        <td>Python
+                            <br><i>Pandas-Numpy-Matplotlib</i>
+                        </td>
+                        <td>
+                            <li>Exploratory Data Analysis(EDA): Analyzed Amazon's BestSeller Books dataset using
+                                python(pandas) to uncover key insights.</li>
+                            <li>Data Cleaning: Performed data cleaning to ensure accuracy and consistency in the dataset
+                                for reliable analysis.</li>
+                            <li>Data Visualization: Utilized matplotlib to visualize key trends.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Superstore Sales Data Analysis</td>
+                        <td>Power BI <br><i>Data Modeling-DAX-Power Query</i></td>
+                        <td>
+                            <li>Created a Power BI dashboard visualizing key metrics.</li>
+                            <li>Leveraged DAX and Data Modeling to enhance analysis and insights.</li>
+                            <li>Developed interactive visualizations to support data-driven decision-making.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hotel Management System</td>
+                        <td>SQL <br><i>SQL-Java-GUI </i>
+                        </td>
+                        <td>
+                            <li>Developed a Java-based GUI application with MySQL integration.</li>
+                            <li>Utilized DML, DQL, and DDL operations for efficient data management and interactive user
+                                experience.</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio Website</td>
+                        <td><i>HTML-CSS</i></td>
+                        <td>
+                            <li>Created well-organized HTML for clear and maintainable code.</li>
+                            <li>Applied advanced CSS techniques for modern, visually appealing design.</li>
+                            <li>Implemented responsive layout to ensure optimal display on various devices.</li>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section><br>
+        <hr>
+
+        <section id="certifications" class="certificationsSection">
+            <h1>Certification</h1>
+            <div class="certification">
+                <h2>Python for Data Science, AI, and Development</h2>
+                <img src="certificate.PNG">
+            </div>
+        </section>
+        <hr>
+
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="footer-first">
+                    <h3>Aasia's Data Analyst Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <h4>Contact Me</h4>
+                    <ul class="contact-info">
+                        <li><img src="email-icon.png" alt="Email Icon" width="20">
+                            <a href="mailto:aasia@example.com">aasiachanna05@example.com</a>
+                        </li>
+                        <li><img src="linkedin-icon.png" alt="LinkedIn Icon" width="20">
+                            <a href="https://www.linkedin.com/in/aasia-channa"
+                                target="_blank">https://www.linkedin.com/in/aasia-channa-631508240/</a>
+                        </li>
+                        <li><img src="address-icon.png" alt="Address Icon" width="20">
+                            Sukkur IBA University, Sukkur, Sindh, Pakistan
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
